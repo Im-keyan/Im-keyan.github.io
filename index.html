@@ -5,187 +5,296 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Karthikeyan Lakshmanan - Developer Portfolio</title>
-    <style>* {
+    <style>
+        /* Basic Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
     padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-header {
-    background-color: #004d80;
-    color: white;
-    padding: 40px 0;
-    text-align: center;
+.nav-logo h1 {
+    font-size: 24px;
+    font-weight: 700;
 }
 
-header .name {
-    font-size: 36px;
-    font-weight: bold;
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
 }
 
-header .contact a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-header .contact a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 40px 0;
-}
-
-section h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #004d80;
-}
-
-section ul {
-    list-style-type: none;
-    margin-top: 10px;
-}
-
-section ul li {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-#skills ul, #experience ul {
+.nav-links li {
     margin-left: 20px;
 }
 
-#experience .job {
-    margin-bottom: 40px;
-}
-
-.job h3 {
-    font-size: 24px;
-    color: #004d80;
-}
-
-.job p.position {
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
     font-size: 18px;
-    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6f61;
+}
+
+/* Hero Section */
+#hero {
+    background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e04f42;
+}
+
+/* Skills Section */
+#skills {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    width: 48%;
+}
+
+.skill h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
     color: #333;
 }
 
+.skill ul {
+    list-style: none;
+}
+
+.skill li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Experience Section */
+#experience {
+    padding: 80px 0;
+    background-color: #f4f4f9;
+}
+
+.experience-item {
+    margin-bottom: 40px;
+}
+
+.experience-item h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.position {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    list-style: none;
+}
+
+.experience-item li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+#contact p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
-    background-color: #004d80;
+    background-color: #333;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
-footer p {
-    font-size: 16px;
+/* Smooth Scroll Effect */
+html {
+    scroll-behavior: smooth;
 }
-</style>
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
+    <!-- Navigation -->
+    <nav>
         <div class="container">
-            <h1 class="name">Karthikeyan Lakshmanan</h1>
-            <p class="contact">
-                <a href="mailto:keyan.professional@gmail.com">keyan.professional@gmail.com</a> |
-                <a href="tel:+917373374674">+91 7373374674</a> |
-                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
-                <a href="https://www.website.com" target="_blank">Website</a> |
-                <a href="https://leetcode.com" target="_blank">LeetCode</a>
-            </p>
+            <div class="nav-logo">
+                <h1>Karthikeyan</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <h3>Primary</h3>
-            <ul>
-                <li>Java</li>
-                <li>MySQL</li>
-                <li>Redis</li>
-                <li>Rest APIs</li>
-                <li>Microservice Architecture</li>
-                <li>Apache (Struts, Kafka, HttpClient, Tomcat, Zookeeper, Ant)</li>
-            </ul>
-
-            <h3>Secondary & Technologies</h3>
-            <ul>
-                <li>Git & CI/CD</li>
-                <li>AWS (EC2, S3, RDS, VPC, Lambda)</li>
-                <li>Deluge</li>
-                <li>Antlr</li>
-                <li>Python</li>
-                <li>Postman</li>
-                <li>Android</li>
-            </ul>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Hello, I'm Karthikeyan Lakshmanan</h2>
+            <p>Core Software Developer | Backend Systems | API Integrations</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-list">
+                <div class="skill">
+                    <h3>Primary</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>MySQL</li>
+                        <li>Redis</li>
+                        <li>Rest APIs</li>
+                        <li>Microservice Architecture</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Secondary & Technologies</h3>
+                    <ul>
+                        <li>AWS (EC2, S3, RDS, VPC, Lambda)</li>
+                        <li>Git & CI/CD</li>
+                        <li>Deluge</li>
+                        <li>Postman</li>
+                        <li>Python</li>
+                        <li>Android</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
     <section id="experience">
         <div class="container">
-            <h2>Work Experience</h2>
-
-            <div class="job">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-item">
                 <h3>ZOHO CORPORATION, Chennai</h3>
                 <p class="position">Member Technical Staff - June 2021 – Present</p>
                 <ul>
-                    <li>Core software developer for Deluge, handling backend systems and optimizing server performance.</li>
-                    <li>Maintains Function-as-a-Service (FaaS) infrastructure, handling over 100 million requests daily.</li>
-                    <li>Developed the "Invoke URL" feature, enabling API calls to external systems.</li>
-                    <li>Leads a team of three developers to ensure smooth system operations.</li>
+                    <li>Developing and maintaining the backend infrastructure for Deluge scripting language.</li>
+                    <li>Creating scalable solutions for over 100 million daily requests.</li>
+                    <li>Leading a team of developers to optimize system performance.</li>
                 </ul>
             </div>
-
-            <div class="job">
+            <div class="experience-item">
                 <h3>Zoho Intern</h3>
                 <p class="position">Apr 2020 – May 2021</p>
                 <ul>
-                    <li>Gained deep understanding of Zoho’s core infrastructure, frameworks, and internal tools.</li>
-                    <li>Proficient with Zoho frameworks such as ZCP, SAS, Mickey, and WAF, along with tools like MI, CM, ZDCM, and SD.</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <h3>Zoho Schools of Learning, Chennai</h3>
-                <p class="position">May 2019 – Mar 2020</p>
-                <ul>
-                    <li>Acquired a solid foundation in core concepts like Java, MySQL, Design Patterns, and Data Structures & Algorithms (DSA).</li>
-                    <li>Learned web and mobile application development with best practices.</li>
+                    <li>Gained hands-on experience with Zoho’s frameworks and tools.</li>
+                    <li>Contributed to the development of internal tools and optimized workflows.</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="personal-experience">
+    <!-- Contact Section -->
+    <section id="contact">
         <div class="container">
-            <h2>Personal Experience</h2>
-            <p>In addition to my work, I am an avid learner. I consistently explore web application development and Android app development through various projects. I have expanded my knowledge in areas such as AWS components, Android, Python, security concepts, and networking.</p>
+            <h2 class="section-title">Contact</h2>
+            <p>If you'd like to connect or discuss a project, feel free to reach out!</p>
+            <p>Email: <a href="mailto:keyan.professional@gmail.com">keyan.professional@gmail.com</a></p>
+            <p>Phone: <a href="tel:+917373374674">+91 7373374674</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Karthikeyan Lakshmanan. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- Scroll Animation JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
