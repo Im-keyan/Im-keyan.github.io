@@ -3,298 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Karthikeyan Lakshmanan - Developer Portfolio</title>
-    <style>
-        /* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-    line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Navigation */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.nav-logo h1 {
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #ff6f61;
-}
-
-/* Hero Section */
-#hero {
-    background: url('https://media.licdn.com/dms/image/v2/D5603AQEY3Ro8sbp03Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696757022957?e=1736380800&v=beta&t=wHdni6-bTDim5tFOukufPPBlMTdKLIz-Y4B7XefLasA') no-repeat center center/cover;
-    height: 100vh;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-#hero h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-#hero p {
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    padding: 12px 30px;
-    background-color: #ff6f61;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #e04f42;
-}
-
-/* Skills Section */
-#skills {
-    padding: 80px 0;
-    background-color: #fff;
-}
-
-.skills-list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.skill {
-    width: 48%;
-}
-
-.skill h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.skill ul {
-    list-style: none;
-}
-
-.skill li {
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-/* Experience Section */
-#experience {
-    padding: 80px 0;
-    background-color: #f4f4f9;
-}
-
-.experience-item {
-    margin-bottom: 40px;
-}
-
-.experience-item h3 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.position {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.experience-item ul {
-    list-style: none;
-}
-
-.experience-item li {
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-/* Contact Section */
-#contact {
-    padding: 80px 0;
-    background-color: #fff;
-}
-
-#contact p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-#contact a {
-    color: #ff6f61;
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* Smooth Scroll Effect */
-html {
-    scroll-behavior: smooth;
-}
-
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <div class="nav-logo">
-                <h1>Karthikeyan</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h2>Hello, I'm Karthikeyan Lakshmanan</h2>
-            <p>Core Software Developer | Backend Systems | API Integrations</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-list">
-                <div class="skill">
-                    <h3>Primary</h3>
-                    <ul>
-                        <li>Java</li>
-                        <li>MySQL</li>
-                        <li>Redis</li>
-                        <li>Rest APIs</li>
-                        <li>Microservice Architecture</li>
-                    </ul>
-                </div>
-                <div class="skill">
-                    <h3>Secondary & Technologies</h3>
-                    <ul>
-                        <li>AWS (EC2, S3, RDS, VPC, Lambda)</li>
-                        <li>Git & CI/CD</li>
-                        <li>Deluge</li>
-                        <li>Postman</li>
-                        <li>Python</li>
-                        <li>Android</li>
-                    </ul>
-                </div>
+    <!-- Split Screen Layout -->
+    <div class="split-screen">
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="content">
+                <h1>Hi, I'm Karthikeyan</h1>
+                <p>Software Developer | Web Enthusiast</p>
+                <a href="#portfolio" class="btn">View My Work</a>
             </div>
         </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-item">
-                <h3>ZOHO CORPORATION, Chennai</h3>
-                <p class="position">Member Technical Staff - June 2021 – Present</p>
-                <ul>
-                    <li>Developing and maintaining the backend infrastructure for Deluge scripting language.</li>
-                    <li>Creating scalable solutions for over 100 million daily requests.</li>
-                    <li>Leading a team of developers to optimize system performance.</li>
-                </ul>
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>I’m a passionate software developer with experience in web and mobile applications, specializing in creating efficient and scalable solutions.</p>
+                <p>Skills: Java, Python, MySQL, AWS, Android</p>
+                <a href="#contact" class="btn">Get in Touch</a>
             </div>
-            <div class="experience-item">
-                <h3>Zoho Intern</h3>
-                <p class="position">Apr 2020 – May 2021</p>
-                <ul>
-                    <li>Gained hands-on experience with Zoho’s frameworks and tools.</li>
-                    <li>Contributed to the development of internal tools and optimized workflows.</li>
-                </ul>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Brief description of the project.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Brief description of the project.</p>
+                <a href="#" target="_blank">View Project</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <p>If you'd like to connect or discuss a project, feel free to reach out!</p>
-            <p>Email: <a href="mailto:keyan.professional@gmail.com">keyan.professional@gmail.com</a></p>
-            <p>Phone: <a href="tel:+917373374674">+91 7373374674</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
-        </div>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: karthikeyan@example.com</p>
+        <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/karthikeyan</a></p>
+        <p>GitHub: <a href="#" target="_blank">github.com/karthikeyan</a></p>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Karthikeyan Lakshmanan. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Scroll Animation JavaScript -->
-    <script src="script.js"></script>
 </body>
 </html>
